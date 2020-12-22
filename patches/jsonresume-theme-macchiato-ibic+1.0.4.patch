@@ -1,0 +1,170 @@
+diff --git a/node_modules/jsonresume-theme-macchiato-ibic/src/partials/projects.hbs b/node_modules/jsonresume-theme-macchiato-ibic/src/partials/projects.hbs
+index aa7a8b7..7a31a52 100644
+--- a/node_modules/jsonresume-theme-macchiato-ibic/src/partials/projects.hbs
++++ b/node_modules/jsonresume-theme-macchiato-ibic/src/partials/projects.hbs
+@@ -1,6 +1,6 @@
+ {{#if resume.projects.length}}
+ <div class="container project-container">
+-    {{> title value="Open Source Projects"}}
++    {{> title value="Projects"}}
+ 
+     {{#each resume.projects}}
+         <section class="item">
+diff --git a/node_modules/jsonresume-theme-macchiato-ibic/src/partials/resume-header.hbs b/node_modules/jsonresume-theme-macchiato-ibic/src/partials/resume-header.hbs
+index f2178f3..997500a 100644
+--- a/node_modules/jsonresume-theme-macchiato-ibic/src/partials/resume-header.hbs
++++ b/node_modules/jsonresume-theme-macchiato-ibic/src/partials/resume-header.hbs
+@@ -6,10 +6,10 @@
+     </div>
+     <div class="profile-pic pull-right">
+         {{#if image}}
+-        <img src="{{image}}" alt="profile-pic">
++        <img src="https://{{image}}" alt="profile-pic">
+         {{/if}}
+         {{#if picture}}
+-        <img src="{{picture}}" alt="profile-pic">
++        <img src="https://{{picture}}" alt="profile-pic">
+         {{/if}}
+     </div>
+ </header>
+diff --git a/node_modules/jsonresume-theme-macchiato-ibic/src/style.css b/node_modules/jsonresume-theme-macchiato-ibic/src/style.css
+index b38f024..a942ee8 100644
+--- a/node_modules/jsonresume-theme-macchiato-ibic/src/style.css
++++ b/node_modules/jsonresume-theme-macchiato-ibic/src/style.css
+@@ -59,6 +59,11 @@
+   src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+ }
+ 
++:root {
++  --main-font-size: 14px;
++  --bigger-font-size: 22px;
++}
++
+ html {
+   background: white;
+ }
+@@ -92,14 +97,14 @@ h1 {
+ h2 {
+   font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+   font-weight: 300;
+-  font-size: 16px;
++  font-size: var(--bigger-font-size);
+   letter-spacing: .5px;
+ }
+ 
+ h3 {
+   font-family: "Lato", Helvetica, Arial, sans-serif;
+   font-weight: 300;
+-  font-size: 14px;
++  font-size: 20px;
+   letter-spacing: .4px;
+ }
+ 
+@@ -110,7 +115,7 @@ h3.bold {
+ h4 {
+   font-family: "Lato", Helvetica, Arial, sans-serif;
+   font-weight: 300;
+-  font-size: 12px;
++  font-size: var(--main-font-size);
+ }
+ 
+ h4.bold {
+@@ -120,7 +125,7 @@ h4.bold {
+ h5 {
+   font-family: "Lato", Helvetica, Arial, sans-serif;
+   font-weight: 300;
+-  font-size: 11px;
++  font-size: var(--main-font-size);
+ }
+ 
+ h5.italic {
+@@ -130,7 +135,7 @@ h5.italic {
+ h6 {
+   font-family: "Lato", Helvetica, Arial, sans-serif;
+   font-weight: 400;
+-  font-size: 10px;
++  font-size: var(--main-font-size);
+ }
+ 
+ a {
+@@ -143,17 +148,17 @@ a:hover {
+ }
+ 
+ a .fa-external-link {
+-  font-size: 10px;
++  font-size: var(--main-font-size);
+   vertical-align: text-top;
+ }
+ 
+ p,
+ li {
+-  font-size: 11px;
++  font-size: var(--main-font-size);
+ }
+ 
+ blockquote {
+-  font-size: 11px;
++  font-size: var(--main-font-size);
+   font-family: "Lato", Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: italic;
+@@ -222,16 +227,18 @@ ul.two-column li {
+   clear: both;
+ }
+ 
+-.profile-pic {
+-  margin-top: -5px;
+-  margin-right: 18px;
++.resume-header {
++  display: flex;
++}
++
++.profile-header {
++  flex: 1;
+ }
+ 
+ .profile-pic img {
+-  height: 52px;
+-  width: 52px;
++  height: 72px;
++  width: 72px;
+   border-radius: 50%;
+-  border: 2px solid #56817A;
+ }
+ 
+ .summary {
+@@ -251,7 +258,7 @@ ul.two-column li {
+ /* Layouts */
+ .page {
+   background: white;
+-  width: 612px;
++  width: 800px;
+   min-height: 792px;
+   display: block;
+   margin: 0 auto;
+@@ -268,7 +275,7 @@ ul.two-column li {
+ 
+ .left-column {
+   float: left;
+-  width: 160px;
++  width: 180px;
+   margin-right: 20px;
+   word-wrap: break-word;
+ }
+@@ -323,7 +330,7 @@ ul.two-column li {
+ }
+ 
+ .info-tag-container .fa {
+-  font-size: 14px;
++  font-size: var(--main-font-size);
+   width: 12px;
+   margin-right: 5px;
+   text-align: center;
+@@ -357,7 +364,6 @@ ul.two-column li {
+   text-transform: none;
+   display: inline-block;
+   vertical-align: middle;
+-  width: 139px;
+ }
+ 
+ .references-container .fa {

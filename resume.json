@@ -1,0 +1,159 @@
+{
+  "basics": {
+    "name": "Rodrigo Martín Posada",
+    "label": "Software Developer. Student at UVa.",
+    "picture": "rodrigomartin.dev/profile.jpg",
+    "email": "contact@rodrigomartin.dev",
+    "phone": "",
+    "url": "https://rodrigomartin.dev",
+    "summary": "Software engineer specialized in mobile and web applications development. Active user in the \"Open Source\" community and always learning new technologies. Self-management is a priority in my projects so that it is why I carry them out from my fully self-sufficient personal data center to which I have direct physical access.",
+    "location": {
+      "countryCode": "ES",
+      "city": "Valladolid"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "rodrigo-martin-posada",
+        "url": "https://www.linkedin.com/in/rodrigo-martin-posada/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Rapsssito",
+        "url": "https://github.com/Rapsssito/"
+      },
+      {
+        "network": "Twitter",
+        "username": "Rapsssito",
+        "url": "https://twitter.com/Rapsssito/"
+      }
+    ]
+  },
+  "work": [],
+  "volunteer": [
+    {
+      "organization": "Oxiu",
+      "position": "Web developer",
+      "website": "https://oxiu.org",
+      "startDate": "2020-03-31",
+      "endDate": "2020-06-30",
+      "summary": "",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Valladolid",
+      "area": "Computer Engineering",
+      "studyType": "Degree",
+      "startDate": "2018-09-10",
+      "endDate": "",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "2º International Award #hack4edu 2020",
+      "date": "2020-11-30",
+      "awarder": "Fundación Telefónica y Fundación ¨la Caixa¨",
+      "summary": ""
+    },
+    {
+      "title": "Extraordinary State High School Award 2018",
+      "date": "2018-06-30",
+      "awarder": "Junta de Castilla y León, Spain",
+      "summary": ""
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "App Development",
+      "level": "Master",
+      "keywords": [
+        "Android (Java)",
+        "iOS (Objective-C)",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": ["Javascript", "ReactJS", "HTML", "CSS"]
+    },
+    {
+      "name": "Backend Development",
+      "level": "",
+      "keywords": ["NodeJS", "Java", "C", "Python", "MongoDB", "MySQL"]
+    },
+    {
+      "name": "Machine Learning",
+      "level": "",
+      "keywords": ["Deep Learning", "Neural Networks", "Tensorflow"]
+    },
+    {
+      "name": "DevOps",
+      "level": "",
+      "keywords": ["CI", "CD", "Git", "TDD"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "C1"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project Carbon",
+      "description": "Project Carbon predicts the electricity pool price in mainland Spain using Machine Learning algorithms. EVs and other appliances can take advantage of this to reduce costs and CO2 footprint.",
+      "keywords": ["Machine Learning", "Deep Learning", "Neural Networks", "Tensorflow"],
+      "startDate": "2020-04-23",
+      "endDate": "",
+      "url": "https://projectcarbon.es/",
+      "roles": ["Developer"],
+      "type": "library"
+    },
+    {
+      "name": "react-native-udp",
+      "description": "Open source React Native UDP socket library for Android & iOS. It allows you to create UDP sockets, imitating Node's dgram API functionalities.",
+      "highlights": [],
+      "keywords": ["React Native", "Javascript", "iOS (Objective-C)", "Android (Java)"],
+      "startDate": "2020-07-01",
+      "endDate": "",
+      "url": "https://github.com/tradle/react-native-udp",
+      "roles": ["Maintainer"],
+      "type": "library"
+    },
+    {
+      "name": "rn-background-actions",
+      "description": "Open source React Native background service library for running background tasks forever in Android & iOS. Schedule a background job that will run your JavaScript when your app is in the background or foreground.",
+      "highlights": [],
+      "keywords": ["React Native", "Javascript", "iOS (Objective-C)", "Android (Java)"],
+      "startDate": "2020-01-01",
+      "endDate": "",
+      "url": "https://github.com/Rapsssito/react-native-background-actions",
+      "roles": ["Owner"],
+      "type": "library"
+    },
+    {
+      "name": "react-native-tcp-socket",
+      "description": "Open source React Native TCP socket library for Android & iOS. It allows you to create client and server TCP sockets, simulating node's net API.",
+      "highlights": [],
+      "keywords": ["React Native", "Javascript", "iOS (Objective-C)", "Android (Java)"],
+      "startDate": "2019-10-01",
+      "endDate": "",
+      "url": "https://github.com/Rapsssito/react-native-tcp-socket",
+      "roles": ["Owner"],
+      "type": "library"
+    }
+  ],
+  "interests": [],
+  "references": []
+}

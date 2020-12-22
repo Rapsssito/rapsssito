@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build:html": "hackmyresume build resume.json TO out/resume.html --theme node_modules/jsonresume-theme-macchiato-ibic",
+    "build:pdf": "electron-pdf out/resume.html out/resume.pdf",
+    "export": "yarn build:html && yarn build:pdf",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "electron-pdf": "^4.0.10",
+    "hackmyresume": "^1.9.0-beta",
+    "jsonresume-theme-macchiato-ibic": "^1.0.4",
+    "patch-package": "^6.2.2"
+  }
+}
