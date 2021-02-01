@@ -69,7 +69,7 @@
   "skills": [
     {
       "name": "App Development",
-      "level": "Master",
+      "level": "",
       "keywords": [
         "Android (Java)",
         "iOS (Objective-C)",
@@ -95,7 +95,7 @@
     {
       "name": "DevOps",
       "level": "",
-      "keywords": ["CI", "CD", "Git", "TDD"]
+      "keywords": ["Linux", "CI", "CD", "Git", "TDD"]
     }
   ],
   "languages": [
